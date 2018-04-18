@@ -25,10 +25,10 @@ var schema = new Schema({
 		type: String,
 		required : false
 	},		
-	rolesAndResponisibility:{
+	rolesAndResponisibility:[{
 		type: String,
 		required : false
-	},			
+	}],			
 	experienceRequired:{
 		type: String,
 		required : false

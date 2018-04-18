@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var HRPolicyModule = require('../../modules/hRPolicy');
-var route = new Route('post', '/addHRPolicy');
+var route = new Route('post', '/hrpolicy');
 
 module.exports = route;
 // public route

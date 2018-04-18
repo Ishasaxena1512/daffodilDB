@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var boardMemberModule = require('../../modules/boardMembers');
-var route = new Route('get', '/getAllBoardMembers');
+var route = new Route('get', '/boardmember');
 
 module.exports = route;
 

@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var currentOpeningModule = require('../../modules/currentOpening');
-var route = new Route('get', '/getAllCurrentOpening');
+var route = new Route('get', '/currentopening');
 
 module.exports = route;
 

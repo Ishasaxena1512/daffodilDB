@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var projectModule = require('../../modules/project');
-var route = new Route('post', '/addProject');
+var route = new Route('post', '/project');
 
 module.exports = route;
 // public route
@@ -107,7 +107,7 @@ route.use(function(req, res, next) {
         deployedOn
     };
 
-    return projectModule.postBlog(blogObject)
+    return projectModule.addProject(blogObject)
         .then(function(result) {
             if (result) {
                 return res.json({'success' : true, 'result' : result});

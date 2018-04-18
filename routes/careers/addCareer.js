@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var careerModule = require('../../modules/careers');
-var route = new Route('post', '/addCareer');
+var route = new Route('post', '/career');
 
 module.exports = route;
 // public route

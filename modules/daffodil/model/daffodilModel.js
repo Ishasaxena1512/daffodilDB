@@ -17,7 +17,11 @@ var options = {
 
 // schema
 var schema = new Schema({  	
-	aboutUs:{
+	name:{
+  		type: String,
+  		required : true
+  	},	
+  	aboutUs:{
   		type: String,
   		required : true
   	},

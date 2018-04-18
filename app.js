@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var Promise = require('bluebird');
-var indexRouter = require('./routes/index');
+// var indexRouter = require('./routes/index');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/daffodilDBTest');
 var utility = require('./lib/utility');
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 utility.walkModulesSync(path.join(__dirname, 'routes'), require('./lib/Route'), function (route) {
     route.mount(app);
 });
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 
 // // catch 404 and forward to error handler
 // app.use(function(req, res, next) {

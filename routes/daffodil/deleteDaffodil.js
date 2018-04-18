@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var daffodilModule = require('../../modules/daffodil');
-var route = new Route('delete', '/deleteDaffodil/:id');
+var route = new Route('delete', '/daffodil/:id');
 
 module.exports = route;
 

@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var resourceModule = require('../../modules/resources');
-var route = new Route('put', '/editBlog/:id');
+var route = new Route('put', '/resource/:id');
 
 module.exports = route;
 // public route

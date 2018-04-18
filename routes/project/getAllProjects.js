@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var projectModule = require('../../modules/project');
-var route = new Route('get', '/getAllProjects');
+var route = new Route('get', '/project');
 
 module.exports = route;
 

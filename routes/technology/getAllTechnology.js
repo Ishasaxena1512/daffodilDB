@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var technologyModule = require('../../modules/technology');
-var route = new Route('get', '/getAllTechnology');
+var route = new Route('get', '/technology');
 
 module.exports = route;
 

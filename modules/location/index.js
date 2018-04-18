@@ -10,7 +10,7 @@ module.exports = locationModule;
  * To create location
  * @Param {Object} object - location information
  */
-locationModule.postlocation = function(object) {
+locationModule.addLocation = function(object) {
     return locationModel(object).save();
 };
 

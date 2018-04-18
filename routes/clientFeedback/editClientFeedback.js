@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var clientFeedbackModule = require('../../modules/clientFeedback');
-var route = new Route('put', '/editClientFeedback/:id');
+var route = new Route('put', '/clientfeedback/:id');
 
 module.exports = route;
 // public route

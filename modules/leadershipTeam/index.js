@@ -10,7 +10,7 @@ module.exports = leadershipModule;
  * To create leadership team
  * @Param {Object} object - leadership member information
  */
-leadershipModule.postLeadership = function(object) {
+leadershipModule.addLeadershipMember = function(object) {
     return leadershipModel(object).save();
 };
 
@@ -18,7 +18,7 @@ leadershipModule.postLeadership = function(object) {
  * Find leadership
  * @Param {Object} query - query to Find
  */
-leadershipModule.getAllLeadershipModel = function() {
+leadershipModule.getAllLeadershipMember = function() {
     return leadershipModel.find({}).exec();
 }
 /**

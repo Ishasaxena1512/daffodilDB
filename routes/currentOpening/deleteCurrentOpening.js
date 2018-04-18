@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var currentOpeningModule = require('../../modules/currentOpening');
-var route = new Route('delete', '/deleteCurrentOpening/:id');
+var route = new Route('delete', '/currentopening/:id');
 
 module.exports = route;
 

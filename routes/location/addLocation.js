@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var locationModule = require('../../modules/location');
-var route = new Route('post', '/addLocation');
+var route = new Route('post', '/location');
 
 module.exports = route;
 // public route
@@ -27,7 +27,7 @@ route.validateInputBody({
             type: 'string'
         }
     },
-    required: ['title', 'address', 'contact']
+    required: ['title', 'address']
 
 });
 
@@ -48,7 +48,7 @@ route.use(function(req, res, next) {
         googleMapUrl
     };
 
-    return locationModule.postLocation(LocationObject)
+    return locationModule.addLocation(LocationObject)
         .then(function(result) {
             if (result) {
                 return res.json({'success' : true, 'result' : result});

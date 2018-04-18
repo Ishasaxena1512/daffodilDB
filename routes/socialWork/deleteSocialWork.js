@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var sociaWorkModule = require('../../modules/socialWork');
-var route = new Route('delete', '/deleteSocialWork/:id');
+var route = new Route('delete', '/socialwork/:id');
 
 module.exports = route;
 

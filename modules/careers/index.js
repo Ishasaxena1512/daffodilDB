@@ -10,7 +10,7 @@ module.exports = careerModule;
  * To create career
  * @Param {Object} object - career information
  */
-careerModule.postcareer = function(object) {
+careerModule.postCareer = function(object) {
     return careerModel(object).save();
 };
 

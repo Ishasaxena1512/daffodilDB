@@ -10,7 +10,7 @@ module.exports = projectModule;
  * To create project
  * @Param {Object} object - project information
  */
-projectModule.postProject = function(object) {
+projectModule.addProject = function(object) {
     return projectModel(object).save();
 };
 

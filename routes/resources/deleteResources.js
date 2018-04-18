@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var resourceModule = require('../../modules/resources');
-var route = new Route('delete', '/deleteBug/:id');
+var route = new Route('delete', '/resource/:id');
 
 module.exports = route;
 

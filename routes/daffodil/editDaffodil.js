@@ -1,16 +1,20 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var daffodilModule = require('../../modules/daffodil');
-var route = new Route('put', '/editDaffodil/:id');
+var route = new Route('put', '/daffodil/:id');
 
 module.exports = route;
 // public route
 route.setPublic();
 
+
 // validate input body 
 route.validateInputBody({
     type: 'object',
     properties: {
+        name : {
+            type: 'string'
+        },
         aboutUs : {
             type: 'string'
         },

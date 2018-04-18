@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var domainModule = require('../../modules/domain');
-var route = new Route('post', '/addDomain');
+var route = new Route('post', '/domain');
 
 module.exports = route;
 // public route

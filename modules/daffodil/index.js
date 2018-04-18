@@ -10,7 +10,7 @@ module.exports = daffodilModule;
  * To create daffodil
  * @Param {Object} object - daffodil information
  */
-daffodilModule.postDaffodil = function(object) {
+daffodilModule.addData = function(object) {
     return daffodilModel(object).save();
 };
 
@@ -18,7 +18,7 @@ daffodilModule.postDaffodil = function(object) {
  * Find daffodil
  * @Param {Object} query - query to Find
  */
-daffodilModule.getAllDaffodil = function() {
+daffodilModule.getAllInfo = function() {
     return daffodilModel.find({}).exec();
 }
 /**

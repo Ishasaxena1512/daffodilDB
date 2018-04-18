@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var currentOpeningModule = require('../../modules/currentOpening');
-var route = new Route('put', '/editCurrentOpening/:id');
+var route = new Route('put', '/currentopening/:id');
 
 module.exports = route;
 // public route
@@ -17,9 +17,9 @@ route.validateInputBody({
         designation : {
             type: 'string'
         },
-        rolesAndResponisibility : {
+        rolesAndResponisibility : [{
             type: 'string'
-        },        
+        }],        
         experienceRequired : {
             type: 'string'
         },        

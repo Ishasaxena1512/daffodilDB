@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var thirdPartyApiModule = require('../../modules/thirdPartyApis');
-var route = new Route('put', '/editApi/:id');
+var route = new Route('put', '/thirdpartyapi/:id');
 
 module.exports = route;
 // public route
@@ -11,27 +11,21 @@ route.setPublic();
 route.validateInputBody({
     type: 'object',
     properties: {
-        createdAt : {
+        name : {
             type: 'date'
         },
-        createdBy : {
+        description : {
             type: 'string'
         },        
-        title : {
+        techonologyUsed : [{
             type: 'string'
-        },        
-        topic : {
+        }],        
+        projectGlimpse : [{
             type: 'string'
-        },        
-        image : {
-            type: 'array'
-        },
-        content: {
-            type: 'string'
-        }
+        }]
     }
-
 });
+
 // find if already exist 
 route.use(function(req, res, next) {
     return thirdPartyApiModule.findThirdPartyApi({ _id : req.params.id})

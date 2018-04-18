@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var thirdPartyApiModule = require('../../modules/thirdPartyApis');
-var route = new Route('get', '/getAllApis');
+var route = new Route('get', '/thirdpartyapi');
 
 module.exports = route;
 

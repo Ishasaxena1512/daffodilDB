@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var daffodilModule = require('../../modules/daffodil');
-var route = new Route('get', '/getAllDaffodil');
+var route = new Route('get', '/daffodil');
 
 module.exports = route;
 
@@ -10,7 +10,7 @@ route.setPublic();
 
 // find if already exist 
 route.use(function(req, res, next) {
-    return daffodilModule.getAlldaffodils()
+    return daffodilModule.getAllInfo()
         .then(function(result) {
             if (result && result.length) {
                 res.daffodil = result;

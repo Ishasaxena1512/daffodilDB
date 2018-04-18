@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var resourceModule = require('../../modules/resources');
-var route = new Route('post', '/addResource');
+var route = new Route('post', '/resource');
 
 module.exports = route;
 // public route
@@ -22,7 +22,7 @@ route.validateInputBody({
             type: 'string'
         }
     },
-    required: ['name', 'downloadLink']
+    required: ['name', 'downloadLink', 'type']
 });
 
 // creating 

@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var currentOpeningModule = require('../../modules/currentOpening');
-var route = new Route('post', '/addCurrentOpening');
+var route = new Route('post', '/currentopening');
 
 module.exports = route;
 // public route
@@ -17,9 +17,9 @@ route.validateInputBody({
         designation : {
             type: 'string'
         },
-        rolesAndResponisibility : {
+        rolesAndResponisibility : [{
             type: 'string'
-        },        
+        }],        
         experienceRequired : {
             type: 'string'
         },        
@@ -58,7 +58,7 @@ route.use(function(req, res, next) {
         location
     };
 
-    return currentOpeningModuleModule.postCurrentOpeningModule(currentOpeningModuleObject)
+    return currentOpeningModule.addCurrOpening(currentOpeningModuleObject)
         .then(function(result) {
             if (result) {
                 return res.json({'success' : true, 'result' : result});

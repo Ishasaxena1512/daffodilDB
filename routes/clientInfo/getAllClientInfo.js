@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var clientInfoModule = require('../../modules/clientInfo');
-var route = new Route('get', '/getAllBugs');
+var route = new Route('get', '/clientinfo');
 
 module.exports = route;
 

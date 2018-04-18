@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var domainModule = require('../../modules/domain');
-var route = new Route('delete', '/deleteDomain/:id');
+var route = new Route('delete', '/domain/:id');
 
 module.exports = route;
 

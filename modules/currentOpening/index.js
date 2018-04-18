@@ -10,7 +10,7 @@ module.exports = curOpeningModule;
  * To create curOpening
  * @Param {Object} object - curOpening information
  */
-curOpeningModule.postcurOpening = function(object) {
+curOpeningModule.addCurrOpening = function(object) {
     return CurOpeningModel(object).save();
 };
 
@@ -18,7 +18,7 @@ curOpeningModule.postcurOpening = function(object) {
  * Find curOpening
  * @Param {Object} query - query to Find
  */
-curOpeningModule.getAllcurOpenings = function() {
+curOpeningModule.getAllCurrentOpening = function() {
     return CurOpeningModel.find({}).exec();
 }
 /**

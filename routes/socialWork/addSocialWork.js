@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var sociaWorkModule = require('../../modules/socialWork');
-var route = new Route('post', '/addSocialWork');
+var route = new Route('post', '/socialwork');
 
 module.exports = route;
 // public route
@@ -21,16 +21,16 @@ route.validateInputBody({
             type: 'string'
         }
     },
-    required: ['detail', 'title']
+    required: ['title', 'detail']
 
 });
 
 // creating 
 route.use(function(req, res, next) {
     console.log("req.body>>", req.body)
-    var type = req.body.type?req.body.type : "",
-        name = req.body.name?  req.body.name : "",
-        downloadLink = req.body.downloadLink? req.body.downloadLink : [];
+    var title = req.body.title?req.body.title : "",
+        detail = req.body.detail?  req.body.detail : "",
+        focusArea = req.body.focusArea? req.body.focusArea : [];
         
     var sociaWorkObject = {
         title,

@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
 var leadershipModule = require('../../modules/leadershipTeam');
-var route = new Route('post', '/addLeadership');
+var route = new Route('post', '/leadership');
 
 module.exports = route;
 // public route
@@ -48,7 +48,7 @@ route.use(function(req, res, next) {
         socialLinks
     };
 
-    return leadershipModule.postleadership(leadershipObject)
+    return leadershipModule.addLeadershipMember(leadershipObject)
         .then(function(result) {
             if (result) {
                 return res.json({'success' : true, 'result' : result});
