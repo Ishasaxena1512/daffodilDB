@@ -31,7 +31,7 @@ route.use(function(req, res, next) {
 
 // find if already exist 
 route.use(function(req, res, next) {
-    return domainModule.deletedomain({ _id : req.params.id})
+    return domainModule.deleteDomain({ _id : req.params.id})
         .then(function(result) {
             return res.json({ success : true, deletedDomainId :req.params.id }); 
         })

@@ -31,7 +31,7 @@ route.use(function(req, res, next) {
 
 // find if already exist 
 route.use(function(req, res, next) {
-    return blogModule.deleteLocation({ _id : req.params.id})
+    return locationModule.deleteLocation({ _id : req.params.id})
         .then(function(result) {
             return res.json({ success : true, deletedLocationId :req.params.id }); 
         })

@@ -25,7 +25,7 @@ careerModule.getAllCareer = function() {
  * Find career
  * @Param {Object} query - query to Find
  */
-careerModule.findcareer = function(query) {
+careerModule.findCareer = function(query) {
     return careerModel.find(query).exec();
 }
 

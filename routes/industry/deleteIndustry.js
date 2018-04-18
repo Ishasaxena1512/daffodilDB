@@ -31,7 +31,7 @@ route.use(function(req, res, next) {
 
 // find if already exist 
 route.use(function(req, res, next) {
-    return blogModule.deleteIndustry({ _id : req.params.id})
+    return industryModule.deleteIndustry({ _id : req.params.id})
         .then(function(result) {
             return res.json({ success : true, deletedIndustryId :req.params.id }); 
         })

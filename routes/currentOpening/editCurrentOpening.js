@@ -32,9 +32,7 @@ route.validateInputBody({
         location: {
             type: 'string'
         }
-    },
-    required: ['designation', 'rolesAndResponisibility', 'location']
-
+    }
 });
 // find if already exist 
 route.use(function(req, res, next) {

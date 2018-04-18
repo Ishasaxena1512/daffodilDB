@@ -25,7 +25,7 @@ curOpeningModule.getAllCurrentOpening = function() {
  * Find curOpening
  * @Param {Object} query - query to Find
  */
-curOpeningModule.findcurOpening = function(query) {
+curOpeningModule.findCurrentOpening = function(query) {
     return CurOpeningModel.find(query).exec();
 }
 
@@ -33,7 +33,7 @@ curOpeningModule.findcurOpening = function(query) {
  * Delete curOpening
  * @Param {Object} query - query to Find
  */
-curOpeningModule.deletecurOpening = function(query) {
+curOpeningModule.deleteCurrentOpening = function(query) {
     return CurOpeningModel.remove(query).exec();
 }
 

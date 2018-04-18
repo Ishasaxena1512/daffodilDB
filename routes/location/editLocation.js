@@ -26,8 +26,7 @@ route.validateInputBody({
         googleMapUrl: {
             type: 'string'
         }
-    },
-    required: ['title', 'address', 'contact']
+    }
 
 });
 

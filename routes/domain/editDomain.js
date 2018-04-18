@@ -29,8 +29,7 @@ route.validateInputBody({
         clientFeedbacks: [{
             type: 'string'
         }]
-    },
-    required: ['title', 'description']
+    }
 
 });
 // find if already exist 

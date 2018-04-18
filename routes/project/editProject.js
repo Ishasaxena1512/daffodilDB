@@ -61,8 +61,7 @@ route.validateInputBody({
         deployedOn: {
             type: 'string'
         }
-    },
-    required: ['title', 'description']
+    }
 
 });
 // find if already exist 

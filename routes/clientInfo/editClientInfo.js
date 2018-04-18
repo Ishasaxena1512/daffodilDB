@@ -20,8 +20,7 @@ route.validateInputBody({
         projectAssociated : {
             type: 'string'
         }
-    },
-    required: ['name', 'about']
+    }
 
 });
 

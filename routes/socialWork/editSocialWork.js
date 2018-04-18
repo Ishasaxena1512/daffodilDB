@@ -21,9 +21,7 @@ route.validateInputBody({
         focusArea : {
             type: 'string'
         }
-    },
-    required: ['detail', 'title']
-
+    }
 });
 // find if already exist 
 route.use(function(req, res, next) {

@@ -32,8 +32,7 @@ route.validateInputBody({
         recommenedReading: {
             type: 'string'
         }
-    },
-    required: ['description', 'title']
+    }
 
 });
 

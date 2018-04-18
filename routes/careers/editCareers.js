@@ -16,8 +16,7 @@ route.validateInputBody({
         currentOpening: {
             type: 'string'
         }
-    },
-    required: ['benefits', 'currentOpening']
+    }
 
 });
 // find if already exist 

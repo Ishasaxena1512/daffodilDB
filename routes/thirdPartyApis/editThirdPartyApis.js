@@ -12,7 +12,7 @@ route.validateInputBody({
     type: 'object',
     properties: {
         name : {
-            type: 'date'
+            type: 'string'
         },
         description : {
             type: 'string'

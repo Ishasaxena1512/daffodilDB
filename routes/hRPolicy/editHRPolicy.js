@@ -23,8 +23,7 @@ route.validateInputBody({
         description : {
             type: 'string'
         }
-    },
-    required: ['title', 'description']
+    }
 
 });
 

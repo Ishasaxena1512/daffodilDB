@@ -26,9 +26,7 @@ route.validateInputBody({
         image : [{
             type: 'string'
         }]
-    },
-    required: ['name', 'designation', 'detailInfo']
-
+    }
 });
 // find if already exist 
 route.use(function(req, res, next) {
