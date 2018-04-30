@@ -19,6 +19,9 @@ route.validateInputBody({
         },        
         contact : {
             type: 'string'
+        },           
+        isHeadQuartered : {
+            type: 'boolean'
         },        
         images : [{
             type: 'string'
@@ -37,12 +40,14 @@ route.use(function(req, res, next) {
     var title = req.body.title?req.body.title : "",
         address = req.body.address? req.body.address : "",
         contact = req.body.contact? req.body.contact : [],
+        isHeadQuartered = req.body.isHeadQuartered? req.body.isHeadQuartered : false,
         images = req.body.images?  req.body.images : [],
         googleMapUrl = req.body.googleMapUrl? req.body.googleMapUrl : "";
         
     var LocationObject = {
         title,
         address,
+        isHeadQuartered,
         contact,
         images,
         googleMapUrl

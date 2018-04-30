@@ -18,12 +18,12 @@ route.validateInputBody({
             type: 'string'
         },
         employeeSize : {
-            type: 'string'
+            type: 'number'
         },  
         awards : [{
             type: 'string'
         }],
-        industries : [{
+        industry : [{
             type: 'string'
         }],  
         hrPolicy : [{
@@ -32,13 +32,10 @@ route.validateInputBody({
         domain : [{
             type: 'string'
         }],  
-        webTechnology : [{
+        technology : [{
             type: 'string'
         }],
-        mobileTechnology : [{
-            type: 'string'
-        }],  
-        location : [{
+        locations : [{
             type: 'string'
         }],
         contact : [{
@@ -53,16 +50,13 @@ route.validateInputBody({
         blogs : [{
             type: 'string'
         }],
-        boardMembers : [{
+        teamMember : [{
             type: 'string'
         }],  
-        leadershipTeam : [{
-            type: 'string'
-        }],
         resources : [{
             type: 'string'
         }],  
-        careers : [{
+        career : [{
             type: 'string'
         }],
         socialWork : [{
@@ -79,8 +73,26 @@ route.validateInputBody({
         }],
         images : [{
             type: 'string'
+        }],                
+        images : [{
+            type: 'string'
+        }],                
+        images : [{
+            type: 'string'
+        }],                
+        comm_tools : [{
+            type: 'string'
         }],        
-        thirdPartyApis : [{
+        code_mgmt_tools : [{
+            type: 'string'
+        }],        
+        business_model : [{
+            type: 'string'
+        }],        
+        project_mgmt_tools : [{
+            type: 'string'
+        }],        
+        thirdPartyApi : [{
             type: 'string'
         }]
     },
@@ -95,52 +107,57 @@ route.use(function(req, res, next) {
         aboutUs = req.body.aboutUs? req.body.aboutUs : "",
         employeeSize = req.body.employeeSize? req.body.employeeSize : 0,
         awards = req.body.awards? req.body.awards : [],
-        industries = req.body.industries? req.body.industries : [],
+        industry = req.body.industry? req.body.industry : [],
         hrPolicy = req.body.hrPolicy? req.body.hrPolicy : [],
         domain = req.body.domain? req.body.domain : [],
-        webTechnology = req.body.webTechnology? req.body.webTechnology : [],
+        technology = req.body.technology? req.body.technology : [],
         mobileTechnology = req.body.mobileTechnology? req.body.mobileTechnology : [],
-        location = req.body.location? req.body.location : [],
+        locations = req.body.locations? req.body.locations : [],
         contact = req.body.contact? req.body.contact : [],
         email = req.body.email? req.body.email : [],
         clients = req.body.clients? req.body.clients : [],
         blogs = req.body.blogs? req.body.blogs : [],
-        boardMembers = req.body.boardMembers? req.body.boardMembers : [],
-        leadershipTeam = req.body.leadershipTeam?  req.body.leadershipTeam : [],
+        teamMember = req.body.teamMember? req.body.teamMember : [],
         resources = req.body.resources? req.body.resources : [],
-        careers = req.body.careers? req.body.careers : [],
+        career = req.body.career? req.body.career : [],
         socialWork = req.body.socialWork? req.body.socialWork : [],
         socialNetworkLinks = req.body.socialNetworkLinks? req.body.socialNetworkLinks : [],
         projects = req.body.projects? req.body.projects : [],
         videosLink = req.body.videosLink?  req.body.videosLink : [],
+        comm_tools = req.body.comm_tools?  req.body.comm_tools : [],
+        code_mgmt_tools = req.body.code_mgmt_tools?  req.body.code_mgmt_tools : [],
+        project_mgmt_tools = req.body.project_mgmt_tools?  req.body.project_mgmt_tools : [],
+        business_model = req.body.business_model?  req.body.business_model : [],
         images = req.body.images?  req.body.images : [],
-        thirdPartyApis = req.body.thirdPartyApis? req.body.thirdPartyApis : [];
+        thirdPartyApi = req.body.thirdPartyApi? req.body.thirdPartyApi : [];
         
     var daffodilObject = {
         name,
         aboutUs,
         employeeSize,
         awards,
-        industries,
+        industry,
         hrPolicy,
         domain,
-        webTechnology,
-        mobileTechnology,
-        location,
+        technology,
+        locations,
         contact,
         email,
         clients,
         blogs,
-        boardMembers,
-        leadershipTeam,
+        teamMember,
         resources,
-        careers,
+        career,
         socialWork,
         socialNetworkLinks,
         projects,
         videosLink,
+        comm_tools,
+        code_mgmt_tools,
+        project_mgmt_tools,
+        business_model,
         images,
-        thirdPartyApis
+        thirdPartyApi
     };
 
     return daffodilModule.addData(daffodilObject)

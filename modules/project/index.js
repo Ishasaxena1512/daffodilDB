@@ -1,4 +1,8 @@
 var projectModel = require('./model/projectModel');
+// var Domain = require('../domain/model/domainModel');
+// var Industry = require('../industry/model/industryModel');
+// var Technology = require('../technology/model/technologyModel');
+// var ThirdPartyApis = require('../thirdPartyApis/model/thirdPartyApiModel');
 var moment = require('moment');
 /**
  * project module
@@ -19,14 +23,23 @@ projectModule.addProject = function(object) {
  * @Param {Object} query - query to Find
  */
 projectModule.getAllProject = function() {
-    return projectModel.find({}).exec();
+    return projectModel.find({}).populate('domain', 'title').populate('industry', 'title').populate('frontendTechnology', 'title').populate('backendTechnology', 'title').populate('thirdPartyApis', 'name').exec();
 }
 /**
  * Find project
  * @Param {Object} query - query to Find
  */
 projectModule.findProject = function(query) {
-    return projectModel.find(query).exec();
+    return projectModel.find(query).populate('domain', 'title').populate('industry', 'title').populate('frontendTechnology', 'title').populate('backendTechnology', 'title').populate('thirdPartyApis', 'name').exec();
+}
+
+/**
+ * Find aggregate project
+ * @Param {Object} query - query to Find
+ */
+projectModule.findProjectAggregate = function(query) {
+	// console.log("query::::::::::::::::::::::::::::", query)
+    return projectModel.aggregate(query);
 }
 
 /**

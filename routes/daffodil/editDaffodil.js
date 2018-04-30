@@ -19,12 +19,12 @@ route.validateInputBody({
             type: 'string'
         },
         employeeSize : {
-            type: 'string'
+            type: 'number'
         },  
         awards : [{
             type: 'string'
         }],
-        industries : [{
+        industry : [{
             type: 'string'
         }],  
         hrPolicy : [{
@@ -33,13 +33,10 @@ route.validateInputBody({
         domain : [{
             type: 'string'
         }],  
-        webTechnology : [{
+        technology : [{
             type: 'string'
         }],
-        mobileTechnology : [{
-            type: 'string'
-        }],  
-        location : [{
+        locations : [{
             type: 'string'
         }],
         contact : [{
@@ -54,16 +51,13 @@ route.validateInputBody({
         blogs : [{
             type: 'string'
         }],
-        boardMembers : [{
+        teamMember : [{
             type: 'string'
         }],  
-        leadershipTeam : [{
-            type: 'string'
-        }],
         resources : [{
             type: 'string'
         }],  
-        careers : [{
+        career : [{
             type: 'string'
         }],
         socialWork : [{
@@ -78,10 +72,22 @@ route.validateInputBody({
         videosLink : [{
             type: 'string'
         }],
+        comm_tools : [{
+            type: 'string'
+        }],        
+        code_mgmt_tools : [{
+            type: 'string'
+        }],  
+        project_mgmt_tools : [{
+            type: 'string'
+        }],       
+        business_model : [{
+            type: 'string'
+        }], 
         images : [{
             type: 'string'
         }],        
-        thirdPartyApis : [{
+        thirdPartyApi : [{
             type: 'string'
         }]
     }

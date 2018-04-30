@@ -1,6 +1,16 @@
 var mongoose = require('mongoose');
 var Schema = require('mongoose').Schema;
-
+var industry = require('../../industry/model/industryModel'),
+hrPolicy = require('../../hRPolicy/model/HRPolicyModel'),
+technology = require('../../technology/model/technologyModel'),
+locations = require('../../location/model/locationModel'),
+teamMember = require('../../teamMember/model/teamMemberModel'),
+resources = require('../../resources/model/resourceModel'),
+career = require('../../careers/model/careerModel'),
+socialWork = require('../../socialWork/model/socialWorkModel'),
+project = require('../../project/model/projectModel'),
+domain = require('../../domain/model/domainModel'),
+thirdPartyApi = require('../../thirdPartyApis/model/thirdPartyApiModel');
 // transform for sending as json
 function omitPrivate(doc, obj) {
     delete obj.__v;
@@ -33,28 +43,29 @@ var schema = new Schema({
 		type: String,
 		required : false	
 	}],		
-	industries:[{
-		type: String,
+	industry:[{
+		type: Schema.ObjectId,
+        'ref': 'industry',
 		required : false	
 	}],			
 	hrPolicy:[{
-		type: String,
+		type: Schema.ObjectId,
+        'ref': 'hrPolicy',
 		required : false	
 	}],			
 	domain:[{
-		type: String,
-		required : false	
+		type: Schema.ObjectId,
+        'ref': 'domain',		
+        required : false	
 	}],			
-	webTechnology:[{
-		type: String,
+	technology:[{
+		type: Schema.ObjectId,
+        'ref': 'technology',
 		required : false	
-	}],			
-	mobileTechnology:[{
-		type: String,
-		required : false	
-	}],			
-	location:[{
-		type: String,
+	}],					
+	locations:[{
+		type: Schema.ObjectId,
+        'ref': 'locations',
 		required : false	
 	}],			
 	contact:[{
@@ -73,24 +84,24 @@ var schema = new Schema({
 		type: String,
 		required : false	
 	}],			
-	boardMembers:[{
-		type: String,
+	teamMember:[{
+		type: Schema.ObjectId,
+        'ref': 'teamMember',
 		required : false	
-	}],		
-	leadershipTeam:[{
-		type: String,
-		required : false	
-	}],		
+	}],			
 	resources:[{
-		type: String,
+		type: Schema.ObjectId,
+        'ref': 'resources',
 		required : false	
 	}],		
-	careers:[{
-		type: String,
+	career:[{
+		type: Schema.ObjectId,
+        'ref': 'career',
 		required : false	
 	}],		
 	socialWork:[{
-		type: String,
+		type: Schema.ObjectId,
+        'ref': 'socialWork',
 		required : false	
 	}],	
 	socialNetworkLinks:[{
@@ -98,10 +109,27 @@ var schema = new Schema({
 		required : false	
 	}],	
 	projects:[{
-		type: String,
+		type: Schema.ObjectId,
+        'ref': 'projects',
 		required : false	
 	}],	
 	videosLink:[{
+		type: String,
+		required : false	
+	}],	
+	comm_tools:[{
+		type: String,
+		required : false	
+	}],	
+	code_mgmt_tools:[{
+		type: String,
+		required : false	
+	}],	
+	project_mgmt_tools:[{
+		type: String,
+		required : false	
+	}],	
+	business_model:[{
 		type: String,
 		required : false	
 	}],	
@@ -109,8 +137,9 @@ var schema = new Schema({
 		type: String,
 		required : false	
 	}],	
-	thirdPartyApis:[{
-		type: String,
+	thirdPartyApi:[{
+		type: Schema.ObjectId,
+        'ref': 'thirdPartyApi',
 		required : false
 	}]
 });

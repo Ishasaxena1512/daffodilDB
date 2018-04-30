@@ -19,14 +19,14 @@ daffodilModule.addData = function(object) {
  * @Param {Object} query - query to Find
  */
 daffodilModule.getAllInfo = function() {
-    return daffodilModel.find({}).exec();
+    return daffodilModel.find({}).populate('domain', 'title').exec();
 }
 /**
  * Find daffodil
  * @Param {Object} query - query to Find
  */
 daffodilModule.findDaffodil = function(query) {
-    return daffodilModel.find(query).exec();
+    return daffodilModel.find(query).populate('industry', 'title').populate('hrPolicy', 'title').populate('technology', 'title').populate('locations', 'title contact').populate('teamMember', 'name').populate('resources', 'name').populate('career').populate('socialWork', 'title').populate('projects', 'title').populate('domain', 'title').populate('thirdPartyApi','name').exec();
 }
 
 /**

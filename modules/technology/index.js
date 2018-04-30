@@ -26,6 +26,7 @@ technologyModule.getAllTechnology = function() {
  * @Param {Object} query - query to Find
  */
 technologyModule.findTechnology = function(query) {
+	console.log('here in findTechnology', query)
     return technologyModel.find(query).exec();
 }
 

@@ -18,7 +18,7 @@ var options = {
 // schema
 var schema = new Schema({ 
 
-  	type:{
+  type:{
   		type: String,
   		required : true
   	},	

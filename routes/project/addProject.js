@@ -25,13 +25,16 @@ route.validateInputBody({
         },
         domain : {
             type: 'string'
+        },                
+        industry : {
+            type: 'string'
         },        
         usp : {
             type: 'string'
         },        
-        platform : {
+        platform : [{
             type: 'string'
-        },        
+        }],        
         clientInfo : {
             type: 'string'
         },
@@ -50,15 +53,18 @@ route.validateInputBody({
         timespan : {
             type: 'string'
         },        
-        frontendTechnology : {
+        frontendTechnology : [{
             type: 'string'
-        },
-        backendTechnology: {
+        }], 
+        allTechnologies : [{
             type: 'string'
-        },        
-        thirdPartyApis : {
+        }],
+        backendTechnology: [{
             type: 'string'
-        },
+        }],        
+        thirdPartyApis : [{
+            type: 'string'
+        }],
         deployedOn: {
             type: 'string'
         }
@@ -74,6 +80,7 @@ route.use(function(req, res, next) {
         description = req.body.description? req.body.description : "",
         overview = req.body.overview? req.body.overview : "",
         highlights = req.body.highlights? req.body.highlights : "",
+        industry = req.body.industry? req.body.industry : "",
         domain = req.body.domain? req.body.domain : "",
         usp = req.body.usp? req.body.usp : "",
         platform = req.body.platform? req.body.platform : [],
@@ -85,6 +92,7 @@ route.use(function(req, res, next) {
         timespan = req.body.timespan? req.body.timespan : "",
         frontendTechnology = req.body.frontendTechnology? req.body.frontendTechnology : [],
         backendTechnology = req.body.backendTechnology? req.body.backendTechnology : [],
+        allTechnologies = frontendTechnology.push(backendTechnology),
         thirdPartyApis = req.body.thirdPartyApis?  req.body.thirdPartyApis : [],
         deployedOn = req.body.deployedOn? req.body.deployedOn : "";
     var blogObject = {
@@ -93,6 +101,7 @@ route.use(function(req, res, next) {
         overview,
         highlights,
         domain,
+        industry,
         usp,
         platform,
         clientInfo,
@@ -103,6 +112,7 @@ route.use(function(req, res, next) {
         timespan,
         frontendTechnology,
         backendTechnology,
+        allTechnologies,
         thirdPartyApis,
         deployedOn
     };

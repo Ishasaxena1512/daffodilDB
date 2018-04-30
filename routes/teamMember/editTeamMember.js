@@ -1,7 +1,7 @@
 var Route = require('../../lib/Route');
 var errors = require('../../lib/errors');
-var locationModule = require('../../modules/location');
-var route = new Route('put', '/location/:id');
+var teamMemberModule = require('../../modules/teamMember');
+var route = new Route('put', '/teamMember/:id');
 
 module.exports = route;
 // public route
@@ -11,36 +11,31 @@ route.setPublic();
 route.validateInputBody({
     type: 'object',
     properties: {
-        title : {
+        name: {
             type: 'string'
         },
-        address : {
+        designation : {
             type: 'string'
         },        
-        contact : {
+        detailInfo : {
             type: 'string'
-        },           
-        isHeadQuartered : {
-            type: 'boolean'
         },        
-        images : [{
+        socialLinkscreatedAt : [{
             type: 'string'
         }],        
-        googleMapUrl: {
+        image : [{
             type: 'string'
-        }
+        }]
     }
-
 });
-
 // find if already exist 
 route.use(function(req, res, next) {
-    return locationModule.findLocation({ _id : req.params.id})
+    return teamMemberModule.findTeamMember({ _id : req.params.id})
         .then(function(result) {
             if (result && result.length) {
                 return next();
             } else {
-                return res.json({ success : false, error :"blog does not exist" }); 
+                return res.json({ success : false, error :"team member does not exist" }); 
             }
         })
         .catch(next);
@@ -55,7 +50,7 @@ route.use(function(req, res, next) {
         updateObj[key] = req.body[key]
     });
 
-    return locationModule.findAndUpdate({ _id : req.params.id}, updateObj)
+    return teamMemberModule.findAndUpdate({ _id : req.params.id}, updateObj)
         .then(function(result) {
             if (result) {
                 return res.json({'success' : true, 'result' : result});

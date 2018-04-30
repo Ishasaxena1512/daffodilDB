@@ -8,6 +8,7 @@ var Promise = require('bluebird');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/daffodilDBTest');
 var utility = require('./lib/utility');
+var run = require('./run');
 var path = require('path');
 var jsonParser = require('./lib/jsonBodyParser');
 var urlEncodedBodyParser = require('./lib/urlEncodedBodyParser');

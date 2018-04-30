@@ -15,33 +15,34 @@ var options = {
     timestamps: true
 };
 
-// schema
-var schema = new Schema({ 
- 	title:{
-  		type: String,
-  		required : true
-  	},
-	address:{
+var schema = new Schema({
+	name:{
 		type: String,
-		required : false
+		required : true
 	},		
-	isHeadQuartered:{
+	designation:{
+		type: String,
+		required : false
+	},			
+	isBoardMember:{
 		type: Boolean,
+		required : true,
 		default : false
-	},	
-	contact:[{
-		type: Number,
-		required : false
-	}],
-	images:[{
-		type: String,
-		required : false	
-	}],
-	googleMapUrl:{
+	},		
+	detailInfo:{
 		type: String,
 		required : false
-	}
-});
+	},			
+	image:[{
+		type: String,
+		required : false
+	}],
+	socialLinks : [{
+		type: String,
+		required : false 
+	}]
+	}, options);
+
 
 // model
-module.exports = mongoose.model('locations', schema); 
+module.exports = mongoose.model('teamMember', schema);

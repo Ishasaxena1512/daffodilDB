@@ -1,0 +1,376 @@
+ {
+	"about daffodil :done"  : {
+		"context1" : {
+			"template" : "Daffodil was founded in 1999. The journey from a fledgling startup to an experienced service provider has been a rewarding one for us. We have won Deloitte Fast 50 tech companies Award 3 times. We attribute our growth to our ability to focus on solutions and not just technology."
+		}, 
+		"context2" : {
+			"template" : "Daffodil was founded in 1999. The journey from a fledgling startup to an experienced service provider has been a rewarding one for us. We have won Deloitte Fast 50 tech companies Award 3 times. We attribute our growth to our ability to focus on solutions and not just technology."
+		}, 
+		"no_context" : {
+			"template" : "Daffodil was founded in 1999. The journey from a fledgling startup to an experienced service provider has been a rewarding one for us. We have won Deloitte Fast 50 tech companies Award 3 times. We attribute our growth to our ability to focus on solutions and not just technology."
+		}
+	},
+	"About tech : done"  : {
+		"context1" : {
+			"template" : "No, we do not work on _"
+		}, 
+		"context2" : {
+			"template" : "No, we do not work on _"
+		}, 
+		"no_context" : {
+			"template" : "No, we do not work on _"
+		}
+	},
+	"Address :done"  : {
+		"context1" : {
+			"template" : "Please check https://daffodilsw.com/contact-us for our office addresses."
+		}, 
+		"context2" : {
+			"template" : "Please check https://daffodilsw.com/contact-us for our office addresses."
+		}, 
+		"no_context" : {
+			"template" : "Please check https://daffodilsw.com/contact-us for our office addresses."
+		}
+	},
+	"Asking About Bot :done"  : {
+		"context1" : {
+			"template" : "My name is Daffodil Bot and I am a chatbot. I can provide information about Daffodil Software Ltd."
+		}, 
+		"context2" : {
+			"template" : "My name is Daffodil Bot and I am a chatbot. I can provide information about Daffodil Software Ltd."
+		}, 
+		"no_context" : {
+			"template" : "My name is Daffodil Bot and I am a chatbot. I can provide information about Daffodil Software Ltd."
+		}
+	},
+	"bye bot :done"  : {
+		"context1" : {
+			"template" : "Bye. Have a nice time."
+		}, 
+		"context2" : {
+			"template" : "Bye. Have a nice time."
+		}, 
+		"no_context" : {
+			"template" : "Bye. Have a nice time."
+		}
+	},
+	"ceo :done"  : {
+		"context1" : {
+			"template" : "_ is Founder CEO of Daffodil."
+		}, 
+		"context2" : {
+			"template" : "_ is Founder CEO of Daffodil."
+		}, 
+		"no_context" : {
+			"template" : "_ is Founder CEO of Daffodil."
+		}
+	},
+	"code management info :done"  : {
+		"context1" : {
+			"template" : "We normally use _. Of course we can use any other tool that you prefer."
+		}, 
+		"context2" : {
+			"template" : "We normally use _. Of course we can use any other tool that you prefer."
+		}, 
+		"no_context" : {
+			"template" : "We normally use _. Of course we can use any other tool that you prefer."
+		}
+	},
+	"communication tools :done"  : {
+		"context1" : {
+			"template" : "Most of our clients prefer _ etc. Of course we can use any other tool that you prefer."
+		}, 
+		"context2" : {
+			"template" : "Most of our clients prefer _ etc. Of course we can use any other tool that you prefer."
+		}, 
+		"no_context" : {
+			"template" : "Most of our clients prefer _ etc. Of course we can use any other tool that you prefer."
+		}
+	},
+	"contact me :done"  : {
+		"context1" : {
+			"template" : "Sure. Asking a Consultant to contact you."
+		}, 
+		"context2" : {
+			"template" : "Sure. Asking a Consultant to contact you."
+		}, 
+		"no_context" : {
+			"template" : "Sure. Asking a Consultant to contact you."
+		}
+	},
+	"contact-details"  : {
+		"context1" : {
+			"template" : "You may call us at +1-201-984-1549 in US and +91-124-663-0100 in India. In case you want to connect over email, please email us at info@daffodilsw.com."
+		}, 
+		"context2" : {
+			"template" : "You may call us at +1-201-984-1549 in US and +91-124-663-0100 in India. In case you want to connect over email, please email us at info@daffodilsw.com."
+		}, 
+		"no_context" : {
+			"template" : "You may call us at +1-201-984-1549 in US and +91-124-663-0100 in India. In case you want to connect over email, please email us at info@daffodilsw.com."
+		}
+	},
+	"Default Fallback Intent :done"  : {
+		"context1" : {
+			"template" : "I didn't get that. Please rephrase the question so I can understand."
+		}, 
+		"context2" : {
+			"template" : "I missed that. Please rephrase the question so I can understand."
+		}, 
+		"no_context" : {
+			"template" : "I didn't get that. Please rephrase the question so I can understand."
+		}
+	},
+	"Default Welcome Intent :done"  : {
+		"context1" : {
+			"template" : "Hi, Daffodil Bot here! You can ask me simple questions about Daffodil and I'll do my best to answer. How may I help you ?"
+		}, 
+		"context2" : {
+			"template" : "Hi, Daffodil Bot here! You can ask me simple questions about Daffodil and I'll do my best to answer. How may I help you ?"
+		}, 
+		"no_context" : {
+			"template" : "Hi, Daffodil Bot here! You can ask me simple questions about Daffodil and I'll do my best to answer. How may I help you ?"
+		}
+	},
+	"do you work internationally :done"  : {
+		"context1" : {
+			"template" : "Yes, most of our clientele belongs to international market and our major client base lies in US, UK, EU and AU."
+		}, 
+		"context2" : {
+			"template" : "Yes, most of our clientele belongs to international market and our major client base lies in US, UK, EU and AU."
+		}, 
+		"no_context" : {
+			"template" : "Yes, most of our clientele belongs to international market and our major client base lies in US, UK, EU and AU."
+		}
+	},
+	"how are you :done"  : {
+		"context1" : {
+			"template" : "Doing fine. Thank you"
+		}, 
+		"context2" : {
+			"template" : "Doing fine. Thank you"
+		}, 
+		"no_context" : {
+			"template" : "Doing fine. Thank you"
+		}
+	},
+	"How many employees are there? :done"  : {
+		"context1" : {
+			"template" : "We have _+ employees at 2 development centres."
+		}, 
+		"context2" : {
+			"template" : "We have _+ employees at 2 development centres."
+		}, 
+		"no_context" : {
+			"template" : "We have _+ employees at 2 development centres."
+		}
+	},
+	"how to contact / rates"  : {
+		"context1" : {
+			"template" : "Please click/tap 'Discuss Your Project' button. Fill the form and a Consultant will contact you with relevant information."
+		}, 
+		"context2" : {
+			"template" : "Please click/tap 'Discuss Your Project' button. Fill the form and a Consultant will contact you with relevant information."
+		}, 
+		"no_context" : {
+			"template" : "Please click/tap 'Discuss Your Project' button. Fill the form and a Consultant will contact you with relevant information."
+		}
+	},
+	"HR - Biodata :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"HR - freshers :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"HR - learning sessions :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"HR - onsite :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"HR - Open Positions :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""		
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"HR - product service :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"HR - recruitment process :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"HR - work culture :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"HR - work timings :done"  : {
+		"context1" : {
+			"template" : ""
+		}, 
+		"context2" : {
+			"template" : ""
+		}, 
+		"no_context" : {
+			"template" : ""
+		}
+	},
+	"location :done"  : {
+		"context1" : {
+			"template" : "Daffodil is headquartered in _."
+		}, 
+		"context2" : {
+			"template" : "Daffodil is headquartered in _."
+		}, 
+		"no_context" : {
+			"template" : "Daffodil is headquartered in _."
+		}
+	},
+	"model info :done"  : {
+		"context1" : {
+			"template" : "We work on ? business model/models - _."
+		}, 
+		"context2" : {
+			"template" : "We work on ? business model/models - _."
+		}, 
+		"no_context" : {
+			"template" : "We work on ? business model/models - _."
+		}
+	},
+	"PM tool info :done"  : {
+		"context1" : {
+			"template" : "Our teams are comfortable in using various project management tools like _ etc. And we are comfortable in using any project management tool you use."
+		}, 
+		"context2" : {
+			"template" : "Our teams are comfortable in using various project management tools like _ etc. And we are comfortable in using any project management tool you use."
+		}, 
+		"no_context" : {
+			"template" : "Our teams are comfortable in using various project management tools like _ etc. And we are comfortable in using any project management tool you use."
+		}
+	},
+	"portfolio :done"  : {
+		"context1" : {
+			"template" : "You can check our portfolio section. If you do not find something related to healthcare, I can ask a consultant to get you relevant information."
+		}, 
+		"context2" : {
+			"template" : "You can check our portfolio section. If you do not find something related to healthcare, I can ask a consultant to get you relevant information."
+		}, 
+		"no_context" : {
+			"template" : "You can check our portfolio section. If you do not find something related to healthcare, I can ask a consultant to get you relevant information."
+		}
+	},
+	"project info"  : {
+		"context1" : {
+			"template" : "I am sending your requirement to our team. A Consultant will contact you asap"
+		}, 
+		"context2" : {
+			"template" : "I am sending your requirement to our team. A Consultant will contact you asap"
+		}, 
+		"no_context" : {
+			"template" : "I am sending your requirement to our team. A Consultant will contact you asap"
+		}
+	},
+	"setup meeting :done"  : {
+		"context1" : {
+			"template" : "ok. I am asking a consultant to setup a meeting with you over email."
+		}, 
+		"context2" : {
+			"template" : "ok. I am asking a consultant to setup a meeting with you over email."
+		}, 
+		"no_context" : {
+			"template" : "ok. I am asking a consultant to setup a meeting with you over email."
+		}
+	},
+	"tech info :done"  : {
+		"context1" : {
+			"template" : "We primarily work on _ to deliver great solutions to our Clients on Web & Mobile apps."
+		}, 
+		"context2" : {
+			"template" : "We primarily work on _ to deliver great solutions to our Clients on Web & Mobile apps."
+		}, 
+		"no_context" : {
+			"template" : "We primarily work on _ to deliver great solutions to our Clients on Web & Mobile apps."
+		}
+	},
+	"Thank you :done"  : {
+		"context1" : {
+			"template" : "You are most welcome."
+		}, 
+		"context2" : {
+			"template" : "You are most welcome."
+		}, 
+		"no_context" : {
+			"template" : "You are most welcome."
+		}
+	},
+	"ok intent :done"  : {
+		"context1" : {
+			"template" : "fine"
+		}, 
+		"context2" : {
+			"template" : "ok"
+		}, 
+		"no_context" : {
+			"template" : "fine"
+		}
+	}
+}

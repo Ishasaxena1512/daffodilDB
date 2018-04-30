@@ -1,5 +1,11 @@
-var mongoose = require('mongoose');
-var Schema = require('mongoose').Schema;
+var mongoose = require('mongoose'), 
+Schema = require('mongoose').Schema;
+
+var technology = require('../../technology/model/technologyModel'),
+thirdPartyApi = require('../../thirdPartyApis/model/thirdPartyApiModel'),
+industry = require('../../industry/model/industryModel'),
+domain = require('../../domain/model/domainModel');
+
 
 // transform for sending as json
 function omitPrivate(doc, obj) {
@@ -34,9 +40,13 @@ var schema = new Schema({
   		required : false
   	},
   	domain:{
-  		type: String,
-  		required : false
-  	},
+  		type: Schema.ObjectId,
+        'ref': 'domain'  	
+    },
+  	industry:{
+  		type: Schema.ObjectId,
+        'ref': 'industry'  	
+    },
   	usp:{
   		type: String,
   		required : false
@@ -70,16 +80,20 @@ var schema = new Schema({
 		required : false
 	},	
 	frontendTechnology:[{
-		type: String,
-		required : false
+		type: Schema.ObjectId,
+        'ref': 'technology' 
 	}],
 	backendTechnology:[{
-		type: String,
-		required : false
+		type: Schema.ObjectId,
+        'ref': 'technology' 
+	}],	
+	allTechnologies:[{
+		type: Schema.ObjectId,
+        'ref': 'technology' 
 	}],
 	thirdPartyApis:[{
-		type: String,
-		required : false
+		type: Schema.ObjectId,
+        'ref': 'thirdPartyApi' 
 	}],
 	deployedOn:{
 		type: String,

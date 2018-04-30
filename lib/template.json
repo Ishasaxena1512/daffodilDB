@@ -1,0 +1,175 @@
+{
+	"about daffodil" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"About tech" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"Address" : {
+		"context" : "",
+		"content" : "Our offices are located at %count% locations."	
+	},	
+	"Individual Address" : {
+		"context" : "%title%/n%address%",
+		"content" : ""	
+	},
+	"Asking About Bot" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"bye bot" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"ceo" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"code management info" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"communication tools" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"contact me" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"contact-details" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"Default Fallback Intent" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"Default Welcome Intent" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"do you work internationally" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"how are you" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"How many employees are there?" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"how to contact / rates" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - Biodata" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - freshers" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - learning sessions" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - onsite" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - Open Positions" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - product service" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - recruitment process" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - work culture" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"HR - work timings" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"location" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"model info" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"PM tool info" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"portfolio" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"project info" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"setup meeting" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"tech info" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"Thank you" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	},
+	"ok intent" : {
+		"context" : "",
+		"content" : "",
+		"data" : []
+	}
+}

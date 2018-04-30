@@ -25,12 +25,15 @@ route.validateInputBody({
         domain : {
             type: 'string'
         },        
+        industry : {
+            type: 'string'
+        },        
         usp : {
             type: 'string'
         },        
-        platform : {
+        platform : [{
             type: 'string'
-        },        
+        }],        
         clientInfo : {
             type: 'string'
         },
@@ -49,15 +52,18 @@ route.validateInputBody({
         timespan : {
             type: 'string'
         },        
-        frontendTechnology : {
+        frontendTechnology : [{
             type: 'string'
-        },
-        backendTechnology: {
+        }],
+        backendTechnology: [{
             type: 'string'
-        },        
-        thirdPartyApis : {
+        }],            
+        allTechnologies: [{
             type: 'string'
-        },
+        }],        
+        thirdPartyApis : [{
+            type: 'string'
+        }],
         deployedOn: {
             type: 'string'
         }

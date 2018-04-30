@@ -17,31 +17,20 @@ var options = {
 
 // schema
 var schema = new Schema({ 
- 	title:{
+
+  context:{
+      type: String,
+      required : true,
+      default : "defaultContext"
+  },    
+  contextArray:[{
   		type: String,
   		required : true
-  	},
-	address:{
+  }],	
+	token:{
 		type: String,
-		required : false
-	},		
-	isHeadQuartered:{
-		type: Boolean,
-		default : false
-	},	
-	contact:[{
-		type: Number,
-		required : false
-	}],
-	images:[{
-		type: String,
-		required : false	
-	}],
-	googleMapUrl:{
-		type: String,
-		required : false
+		required : true
 	}
 });
-
 // model
-module.exports = mongoose.model('locations', schema); 
+module.exports = mongoose.model('session', schema); 
